@@ -3,123 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bajanese</title>
-  <meta name="description" content="Restaurant, grill and catering service.">
-  <meta property="og:title" content="🍜">
-  <meta property="og:description" content="Restaurant, grill and catering service.">
+  <title>Bajanese — Bajan Grill &amp; Catering</title>
+  <meta name="description" content="Bajanese: Barbadian-inspired grill and catering. Fresh flame-grilled classics, island sides, and catering for any size gathering.">
+  <meta property="og:title" content="Bajanese — Bajan Grill & Catering">
+  <meta property="og:description" content="Barbadian-inspired grill and catering. Fresh flame-grilled classics, island sides, and catering for any size gathering.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bajanese.com">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bajanese">
-  <meta name="twitter:description" content="Restaurant, grill and catering service.">
+  <meta name="twitter:title" content="Bajanese — Bajan Grill & Catering">
+  <meta name="twitter:description" content="Barbadian-inspired grill and catering. Fresh flame-grilled classics, island sides, and catering for any size gathering.">
   <meta property="og:image" content="https://bajanese.com/profile.png">
   <meta name="twitter:image" content="https://bajanese.com/profile.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
 </head>
 <body>
 
   <a href="#main-content" class="skip-link">Skip to content</a>
 
-  <canvas id="bg-canvas"></canvas>
-
-  <div id="fog-layer">
-    <div class="fog fog-1"></div>
-    <div class="fog fog-2"></div>
-    <div class="fog fog-3"></div>
-  </div>
-
-  <div id="glow-overlay"></div>
+  <header id="site-header">
+    <a href="#main-content" class="brand">Bajanese</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
 
   <div class="content-wrapper">
     <main id="main-content">
 
       <section id="hero">
+        <span class="hero-emoji" aria-hidden="true">🔥</span>
         <h1>Bajanese</h1>
-        <span class="hero-emoji" aria-hidden="true">🍜</span>
-        <div id="tagline-wrapper" aria-label="Restaurant, grill and catering service."></div>
+        <div id="tagline-wrapper" aria-label="Barbadian-inspired grill and catering."></div>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#catering" class="btn btn-secondary">Book Catering</a>
+        </div>
       </section>
 
       <section id="about">
-        <h2>about</h2>
+        <h2>Our Story</h2>
         <div class="about-content">
           <p>
-            <span class="highlight">Variants</span> are <span class="highlight">counterparts</span>, usually of a <span class="highlight">[redacted]</span>, from alternate realities and/or <span class="highlight">[redacted]</span>.
+            <span class="placeholder-note">[Placeholder — replace with your real story]</span>
+            Bajanese started as a backyard grill between family and friends and grew into a full
+            catering service built around one idea: <span class="highlight">Barbadian food should taste like home</span>,
+            wherever you're eating it. Every plate leans on flame, citrus, and island spice —
+            the way it's done back home.
           </p>
           <p>
-            <span class="highlight">[Redacted]</span> can have a number of effects, including precipitation, rain shadowing, leeward winds, and associated clouds.
+            We source what we can locally, marinate everything from scratch, and cook to order
+            on the grill — no shortcuts. Whether it's a plate for one or a spread for two hundred,
+            it comes off the same fire.
           </p>
         </div>
       </section>
 
-      <section id="projects">
-        <h2>projects</h2>
-        <div class="projects-grid">
+      <section id="menu">
+        <h2>Menu</h2>
+        <p class="section-intro placeholder-note">[Placeholder menu — swap in your real dishes and prices]</p>
 
-          <a href="https://bajanese.com/"
-             class="project-card clickable"
-             target="_blank" rel="noopener">
-            <h3>Bajanese</h3>
-            <p>Restaurant, grill and catering service.</p>
-            <div class="card-footer">
-              <span class="repo-link">🌤️</span>
-            </div>
-          </a>
+        <div class="menu-category">
+          <h3>Starters</h3>
+          <ul class="menu-list">
+            <li><span class="menu-item-name">Bajan Fish Cakes</span><span class="menu-item-dots"></span><span class="menu-item-price">$8</span></li>
+            <li><span class="menu-item-name">Saltfish Buljol &amp; Bakes</span><span class="menu-item-dots"></span><span class="menu-item-price">$10</span></li>
+            <li><span class="menu-item-name">Fried Plantain</span><span class="menu-item-dots"></span><span class="menu-item-price">$6</span></li>
+          </ul>
+        </div>
 
-          <div class="project-card placeholder" aria-hidden="true">
-            <h3>&#10038;</h3>
-            <p>Lost in the future.</p>
+        <div class="menu-category">
+          <h3>Off the Grill</h3>
+          <ul class="menu-list">
+            <li><span class="menu-item-name">Bajan Grilled Chicken</span><span class="menu-item-dots"></span><span class="menu-item-price">$16</span></li>
+            <li><span class="menu-item-name">Grilled Flying Fish</span><span class="menu-item-dots"></span><span class="menu-item-price">$18</span></li>
+            <li><span class="menu-item-name">BBQ Pork Ribs</span><span class="menu-item-dots"></span><span class="menu-item-price">$20</span></li>
+            <li><span class="menu-item-name">Grilled Snapper, Island Spice</span><span class="menu-item-dots"></span><span class="menu-item-price">$22</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <h3>Sides</h3>
+          <ul class="menu-list">
+            <li><span class="menu-item-name">Macaroni Pie</span><span class="menu-item-dots"></span><span class="menu-item-price">$5</span></li>
+            <li><span class="menu-item-name">Rice &amp; Peas</span><span class="menu-item-dots"></span><span class="menu-item-price">$5</span></li>
+            <li><span class="menu-item-name">Grilled Corn</span><span class="menu-item-dots"></span><span class="menu-item-price">$4</span></li>
+            <li><span class="menu-item-name">Coleslaw</span><span class="menu-item-dots"></span><span class="menu-item-price">$4</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <h3>Drinks</h3>
+          <ul class="menu-list">
+            <li><span class="menu-item-name">Sorrel</span><span class="menu-item-dots"></span><span class="menu-item-price">$4</span></li>
+            <li><span class="menu-item-name">Mauby</span><span class="menu-item-dots"></span><span class="menu-item-price">$4</span></li>
+            <li><span class="menu-item-name">Rum Punch</span><span class="menu-item-dots"></span><span class="menu-item-price">$9</span></li>
+            <li><span class="menu-item-name">Ginger Beer</span><span class="menu-item-dots"></span><span class="menu-item-price">$4</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="catering">
+        <h2>Catering</h2>
+        <p class="section-intro placeholder-note">[Placeholder packages — replace with your real offerings and pricing]</p>
+        <div class="catering-grid">
+
+          <div class="catering-card">
+            <h3>Backyard Lime</h3>
+            <p class="catering-size">Up to 20 guests</p>
+            <p>Grilled mains, two sides, and drinks — dropped off and ready to serve.</p>
           </div>
 
-          <div class="project-card placeholder" aria-hidden="true">
-            <h3>&#10038;</h3>
-            <p>The present is a gift.</p>
+          <div class="catering-card">
+            <h3>Full Grill Spread</h3>
+            <p class="catering-size">50–200 guests</p>
+            <p>On-site grill station, full menu, staffed by our team for the whole event.</p>
           </div>
 
+          <div class="catering-card">
+            <h3>Office &amp; Corporate</h3>
+            <p class="catering-size">Any size</p>
+            <p>Individually packed lunches or a buffet spread, delivered on schedule.</p>
+          </div>
+
+        </div>
+        <a href="#visit" class="btn btn-primary catering-cta">Get a Quote</a>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <p class="section-intro placeholder-note">[Placeholder — replace these tiles with real photos]</p>
+        <div class="gallery-grid">
+          <div class="gallery-tile"><span aria-hidden="true">🍗</span><p>Add photo</p></div>
+          <div class="gallery-tile"><span aria-hidden="true">🐟</span><p>Add photo</p></div>
+          <div class="gallery-tile"><span aria-hidden="true">🌽</span><p>Add photo</p></div>
+          <div class="gallery-tile"><span aria-hidden="true">🥃</span><p>Add photo</p></div>
+        </div>
+      </section>
+
+      <section id="visit">
+        <h2>Visit &amp; Contact</h2>
+        <div class="visit-grid">
+          <div class="visit-block">
+            <h3>Hours</h3>
+            <p class="placeholder-note">[Placeholder hours]</p>
+            <ul class="hours-list" id="hours-list">
+              <li><span>Monday</span><span>Closed</span></li>
+              <li><span>Tuesday</span><span>11:00 – 21:00</span></li>
+              <li><span>Wednesday</span><span>11:00 – 21:00</span></li>
+              <li><span>Thursday</span><span>11:00 – 21:00</span></li>
+              <li><span>Friday</span><span>11:00 – 22:00</span></li>
+              <li><span>Saturday</span><span>11:00 – 22:00</span></li>
+              <li><span>Sunday</span><span>12:00 – 20:00</span></li>
+            </ul>
+            <p id="open-status" class="open-status"></p>
+          </div>
+          <div class="visit-block">
+            <h3>Location &amp; Contact</h3>
+            <p class="placeholder-note">[Placeholder — replace with real address/contact]</p>
+            <address>
+              123 Placeholder Highway<br>
+              Bridgetown, Barbados
+            </address>
+            <p><a href="tel:+12460000000">+1 (246) 000-0000</a></p>
+            <p><a href="mailto:hello@bajanese.com">hello@bajanese.com</a></p>
+          </div>
         </div>
       </section>
 
       <section id="connect">
-        <h2>connect</h2>
+        <h2>Connect</h2>
         <div class="social-grid">
-
-          <a href="https://github.com/fairytalecorporation"
-             class="social-link"
-             data-platform="github"
-             aria-label="GitHub profile"
-             target="_blank" rel="noopener">
-            <span class="status-dot"></span>
-            <span>GitHub</span>
-          </a>
 
           <a href="https://instagram.com/bajanese.bb"
              class="social-link"
              data-platform="instagram"
              aria-label="Instagram profile"
              target="_blank" rel="noopener">
-            <span class="status-dot"></span>
             <span>Instagram</span>
           </a>
 
-          <a href="https://twitch.tv/bajanese"
+          <a href="https://wa.me/12460000000"
              class="social-link"
-             data-platform="twitch"
-             aria-label="Twitch channel"
+             data-platform="whatsapp"
+             aria-label="Message on WhatsApp"
              target="_blank" rel="noopener">
-            <span class="status-dot"></span>
-            <span>Twitch</span>
-          </a>
-
-          <a href="https://youtube.com/@bajanese"
-             class="social-link"
-             data-platform="youtube"
-             aria-label="YouTube channel"
-             target="_blank" rel="noopener">
-            <span class="status-dot"></span>
-            <span>YouTube</span>
+            <span>WhatsApp</span>
           </a>
 
           <a href="https://x.com/bajanese"
@@ -127,23 +203,11 @@
              data-platform="twitter"
              aria-label="X profile"
              target="_blank" rel="noopener">
-            <span class="status-dot"></span>
             <span>X</span>
           </a>
 
         </div>
       </section>
-
-      <!--
-      <section id="support">
-        <h2>support</h2>
-        <a href="https://patreon.com/bajanese"
-           class="support-link"
-           target="_blank" rel="noopener">
-          Patreon &rarr;
-        </a>
-      </section>
-      -->
 
     </main>
 

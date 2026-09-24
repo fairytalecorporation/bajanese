@@ -31,7 +31,7 @@ No build step, no dependencies. Edit `index.html`, `style.css`, or `script.js` a
 
 ## Style Guidelines
 
-- **Aesthetic:** Sunset horizon / atmospheric — warm embers, deep indigos, misty clouds.
+- **Aesthetic:** Warm, food-forward — cream backgrounds, terracotta/ember accents, serif display type for headings.
 - **No frameworks.** All vanilla HTML, CSS, and JavaScript.
 - **CSS:** Custom properties in `:root` for the palette; prefer these over hardcoded values.
 - **JavaScript:** ES5-compatible syntax (IIFE, `var`, function expressions) to avoid any transpilation needs.
