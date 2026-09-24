@@ -1,4 +1,4 @@
-# Contributing to orographiclouds
+# Contributing to Bajanese
 
 First off, thanks for taking the time to contribute! The following is a set of guidelines for contributing to this project.
 
@@ -7,8 +7,8 @@ First off, thanks for taking the time to contribute! The following is a set of g
 1. **Fork the repository** on GitHub.
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/your-username/orographiclouds.git
-   cd orographiclouds
+   git clone https://github.com/your-username/Bajanese.git
+   cd Bajanese
    ```
 3. **Open `index.html`** in your browser directly, or serve locally with any static server:
    ```bash
