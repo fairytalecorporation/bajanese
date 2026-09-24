@@ -224,7 +224,7 @@
     var el = document.getElementById('tagline-wrapper');
     if (!el) return;
 
-    var text = 'Recordando aquellos momentos.';
+    var text = 'Restaurant, grill and catering service.';
     var i = 0;
     el.textContent = '';
 
