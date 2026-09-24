@@ -10,7 +10,7 @@
     var el = document.getElementById('tagline-wrapper');
     if (!el) return;
 
-    var text = 'Barbadian-inspired grill and catering.';
+    var text = 'Bajan meets Chinese, every day.';
     var i = 0;
     el.textContent = '';
 
