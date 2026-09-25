@@ -31,7 +31,8 @@ No build step, no dependencies. Edit the pages, `style.css`, `script.js`, `cart.
 
 ## Style Guidelines
 
-- **Aesthetic:** Matches the logo: indigo (`--brand-indigo`) for structure, red (`--brand-red-strong` for text and buttons) for ordering, yellow only on indigo backgrounds, white page, sticker-style cards. Baloo 2 for headings, Inter for body text.
+- **Aesthetic:** Matches the logo: indigo for structure, red for ordering, yellow only on indigo backgrounds, sticker-style cards. Baloo 2 for headings, Inter for body text.
+- **Colours and dark mode:** colour text with `--text-indigo` and `--text-red`. Use `--brand-indigo` and `--brand-red-strong` only for fills such as backgrounds and button shadows, because they don't change in dark mode. Check every change in both light and dark themes.
 - **Shared header and footer:** every page carries identical copies. If you change one, change them all.
 - **No frameworks.** All vanilla HTML, CSS, and JavaScript.
 - **CSS:** Custom properties in `:root` for the palette; prefer these over hardcoded values.

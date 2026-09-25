@@ -458,8 +458,51 @@
     forEachEl('.reveal', function (el) { observer.observe(el); });
   }
 
+  /* ─── Theme ───
+     The inline <head> script applies a saved choice before first paint; without
+     one, the site follows the system setting. */
+
+  function initThemeToggle() {
+    var root = document.documentElement;
+    var systemDark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+    function isDark() {
+      var chosen = root.getAttribute('data-theme');
+      if (chosen) return chosen === 'dark';
+      return !!(systemDark && systemDark.matches);
+    }
+
+    function sync() {
+      forEachEl('[data-theme-toggle]', function (btn) {
+        btn.setAttribute('aria-pressed', isDark() ? 'true' : 'false');
+      });
+    }
+
+    forEachEl('[data-theme-toggle]', function (btn) {
+      btn.hidden = false;
+      btn.addEventListener('click', function () {
+        var next = isDark() ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try {
+          window.localStorage.setItem('bajanese.theme', next);
+        } catch (e) {
+          // Storage blocked: the choice still applies for this visit.
+        }
+        sync();
+      });
+    });
+
+    if (systemDark) {
+      var onSystemChange = function () { if (!root.getAttribute('data-theme')) sync(); };
+      if (systemDark.addEventListener) systemDark.addEventListener('change', onSystemChange);
+      else if (systemDark.addListener) systemDark.addListener(onSystemChange);
+    }
+    sync();
+  }
+
   /* ─── Boot ─── */
 
+  initThemeToggle();
   initTypewriter();
   initReveal();
 

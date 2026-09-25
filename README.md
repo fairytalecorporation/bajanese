@@ -38,6 +38,8 @@ Most day-to-day changes are made in the `data/` files. The website reads them no
 ## Code
 
 - `style.css` has the palette taken from the logo, plus all the components.
+  - Dark mode overrides the colour tokens in two identical blocks near the top: one follows the system setting, the other applies when the header toggle is used.
+  - The visitor's choice is saved under `bajanese.theme`. A one-line script in each page's `<head>` applies it before the page draws.
 - `script.js` holds the shared helpers (Barbados clock, data loading, formatting) and draws the locations, deals and menu.
 - `cart.js` runs the cart, favourites, the choice picker, WhatsApp checkout and recent orders. It saves them in the browser's `localStorage` (keys `bajanese.cart`, `bajanese.faves`, `bajanese.orders`).
 

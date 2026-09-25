@@ -1,4 +1,8 @@
+/* Fill tokens (--brand-*) stay the same in both themes; text uses --text-indigo / --text-red. */
 :root {
+  color-scheme: light;
+  --text-indigo: #3f4195;
+  --text-red: #c62828;
   --brand-indigo: #3f4195;
   --brand-indigo-deep: #2e3072;
   --brand-indigo-tint: #eef0fa;
@@ -20,6 +24,42 @@
   --radius: 14px;
   --shadow-sticker: 3px 3px 0 rgba(114, 115, 118, 0.35);
   --container: 1100px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --text-indigo: #aeb0ff;
+    --text-red: #ff8a85;
+    --brand-indigo-tint: #202258;
+    --brand-red-tint: #3b1820;
+    --sticker-outline: #3a3c6a;
+    --surface: #121328;
+    --surface-alt: #1a1b36;
+    --ink: #ecedf7;
+    --ink-soft: #b3b5cc;
+    --line: #2c2e55;
+    --success: #7ad69a;
+    --success-tint: #143322;
+    --shadow-sticker: 3px 3px 0 rgba(0, 0, 0, 0.45);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --text-indigo: #aeb0ff;
+  --text-red: #ff8a85;
+  --brand-indigo-tint: #202258;
+  --brand-red-tint: #3b1820;
+  --sticker-outline: #3a3c6a;
+  --surface: #121328;
+  --surface-alt: #1a1b36;
+  --ink: #ecedf7;
+  --ink-soft: #b3b5cc;
+  --line: #2c2e55;
+  --success: #7ad69a;
+  --success-tint: #143322;
+  --shadow-sticker: 3px 3px 0 rgba(0, 0, 0, 0.45);
 }
 
 *, *::before, *::after {
@@ -51,12 +91,12 @@ img {
 }
 
 a {
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
 }
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
   line-height: 1.15;
 }
 
@@ -108,7 +148,7 @@ h3 {
 }
 
 :focus-visible {
-  outline: 3px solid var(--brand-indigo);
+  outline: 3px solid var(--text-indigo);
   outline-offset: 2px;
 }
 
@@ -167,7 +207,7 @@ h3 {
   letter-spacing: 0.12em;
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--brand-red-strong);
+  color: var(--text-red);
   margin-bottom: 6px;
 }
 
@@ -232,7 +272,7 @@ h3 {
 .site-nav a {
   padding: 8px 12px;
   border-radius: 999px;
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
   font-weight: 600;
   font-size: 0.9375rem;
   text-decoration: none;
@@ -260,20 +300,29 @@ h3 {
   text-decoration: none;
 }
 
-.cart-link {
+.icon-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
+  padding: 0;
   border-radius: 50%;
   border: 2px solid var(--sticker-outline);
-  color: var(--brand-indigo);
+  background: var(--surface);
+  color: var(--text-indigo);
+  cursor: pointer;
 }
 
-.cart-link:hover {
-  border-color: var(--brand-indigo);
+.icon-btn:hover {
+  border-color: var(--text-indigo);
+}
+
+.theme-toggle[aria-pressed="true"] .icon-moon,
+.theme-toggle[aria-pressed="false"] .icon-sun {
+  display: none;
 }
 
 .cart-count {
@@ -337,8 +386,8 @@ h3 {
 
 .btn-secondary {
   background: var(--surface);
-  color: var(--brand-indigo);
-  border-color: var(--brand-indigo);
+  color: var(--text-indigo);
+  border-color: var(--text-indigo);
 }
 
 .btn-secondary:hover {
@@ -347,8 +396,8 @@ h3 {
 
 .btn-secondary[aria-pressed="true"] {
   background: var(--brand-red-tint);
-  border-color: var(--brand-red-strong);
-  color: var(--brand-red-strong);
+  border-color: var(--text-red);
+  color: var(--text-red);
 }
 
 .btn-yellow {
@@ -387,7 +436,7 @@ h3 {
   font: inherit;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -401,7 +450,7 @@ h3 {
   padding: 1px 8px;
   border-radius: 999px;
   background: var(--brand-red-tint);
-  color: var(--brand-red-strong);
+  color: var(--text-red);
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -438,7 +487,7 @@ h3 {
   font-family: var(--font-display);
   font-size: clamp(1.375rem, 3vw, 1.875rem);
   font-weight: 700;
-  color: var(--brand-red-strong);
+  color: var(--text-red);
   margin-top: 12px;
   min-height: 1.5em;
 }
@@ -511,7 +560,7 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--brand-red-strong) !important;
+  color: var(--text-red) !important;
   margin-bottom: 8px;
 }
 
@@ -617,7 +666,7 @@ h3 {
 
 .hours-list li.is-today {
   font-weight: 700;
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
 }
 
 .contact-list {
@@ -656,7 +705,7 @@ h3 {
   background: transparent;
   font: inherit;
   font-weight: 700;
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
   padding: 8px 18px;
   border-radius: 999px;
   cursor: pointer;
@@ -758,7 +807,7 @@ h3 {
 
 .menu-item-price {
   font-weight: 700;
-  color: var(--brand-red-strong);
+  color: var(--text-red);
 }
 
 .menu-item-actions {
@@ -773,7 +822,7 @@ h3 {
   border-radius: 50%;
   border: 2px solid var(--sticker-outline);
   background: var(--surface);
-  color: var(--sticker-shadow);
+  color: var(--ink-soft);
   font-size: 1rem;
   line-height: 1;
   cursor: pointer;
@@ -784,7 +833,7 @@ h3 {
 }
 
 .fave-btn[aria-pressed="true"] {
-  color: var(--brand-red-strong);
+  color: var(--text-red);
   border-color: var(--brand-red);
   background: var(--brand-red-tint);
 }
@@ -806,6 +855,8 @@ h3 {
   padding: 0;
   border: 2px solid var(--sticker-outline);
   border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
   box-shadow: 6px 6px 0 rgba(63, 65, 149, 0.25);
 }
 
@@ -844,7 +895,7 @@ h3 {
 }
 
 .choice input {
-  accent-color: var(--brand-indigo);
+  accent-color: var(--text-indigo);
   margin-right: 6px;
 }
 
@@ -906,11 +957,11 @@ h3 {
   display: block;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--brand-red-strong);
+  color: var(--text-red);
 }
 
 .order-line-issue.is-info {
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
 }
 
 .order-line-total {
@@ -931,14 +982,14 @@ h3 {
   border-radius: 50%;
   border: 2px solid var(--sticker-outline);
   background: var(--surface);
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
   font: inherit;
   font-weight: 700;
   cursor: pointer;
 }
 
 .qty button:hover {
-  border-color: var(--brand-indigo);
+  border-color: var(--text-indigo);
 }
 
 .qty-value {
@@ -996,7 +1047,7 @@ h3 {
 
 .field input:focus-visible,
 .field textarea:focus-visible {
-  border-color: var(--brand-indigo);
+  border-color: var(--text-indigo);
   outline-offset: 1px;
 }
 
@@ -1005,7 +1056,7 @@ h3 {
 }
 
 .checkout-error {
-  color: var(--brand-red-strong);
+  color: var(--text-red);
   font-weight: 700;
   margin: 12px 0;
 }
@@ -1135,7 +1186,7 @@ h3 {
 
 .faq summary {
   font-weight: 700;
-  color: var(--brand-indigo);
+  color: var(--text-indigo);
   cursor: pointer;
 }
 
