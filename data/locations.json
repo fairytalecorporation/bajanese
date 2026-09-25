@@ -1,0 +1,34 @@
+{
+  "locations": [
+    {
+      "id": "restaurant",
+      "name": "Bajanese Restaurant",
+      "shortName": "Restaurant",
+      "description": "Chinese takeout and Bajan home cooking.",
+      "address": ["Lower Collymore Rock"],
+      "parish": "St. Michael",
+      "country": "Barbados",
+      "lat": null,
+      "lng": null,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lower+Collymore+Rock%2C+St.+Michael%2C+Barbados",
+      "phone": "+12460000000",
+      "whatsapp": "12460000000",
+      "hours": [null, [660, 1260], [660, 1260], [660, 1260], [660, 1320], [660, 1320], [720, 1200]]
+    },
+    {
+      "id": "grill",
+      "name": "Bajanese Grill",
+      "shortName": "Grill",
+      "description": "Grilled fish, grilled chicken and macaroni pie.",
+      "address": [],
+      "parish": "St. George",
+      "country": "Barbados",
+      "lat": null,
+      "lng": null,
+      "mapsUrl": null,
+      "phone": null,
+      "whatsapp": null,
+      "hours": [null, null, null, "open", "open", "open", null]
+    }
+  ]
+}

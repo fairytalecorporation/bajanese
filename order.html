@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bajanese — Bajan &amp; Chinese Kitchen</title>
-  <meta name="description" content="Bajanese: Chinese takeout and Bajan home cooking in Lower Collymore Rock, St. Michael, and the Bajanese Grill in St. George, Thursday to Saturday.">
-  <link rel="canonical" href="https://bajanese.com/">
-  <meta property="og:title" content="Bajanese — Bajan &amp; Chinese Kitchen">
-  <meta property="og:description" content="Bajanese: Chinese takeout and Bajan home cooking in Lower Collymore Rock, St. Michael, and the Bajanese Grill in St. George, Thursday to Saturday.">
+  <title>Your Order — Bajanese</title>
+  <meta name="description" content="Review your Bajanese order and send it to us on WhatsApp for pickup.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://bajanese.com/order.html">
+  <meta property="og:title" content="Your Order — Bajanese">
+  <meta property="og:description" content="Review your Bajanese order and send it to us on WhatsApp for pickup.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bajanese.com/">
+  <meta property="og:url" content="https://bajanese.com/order.html">
   <meta property="og:image" content="https://bajanese.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bajanese — Bajan &amp; Chinese Kitchen">
-  <meta name="twitter:description" content="Bajanese: Chinese takeout and Bajan home cooking in Lower Collymore Rock, St. Michael, and the Bajanese Grill in St. George, Thursday to Saturday.">
+  <meta name="twitter:title" content="Your Order — Bajanese">
+  <meta name="twitter:description" content="Review your Bajanese order and send it to us on WhatsApp for pickup.">
   <meta name="twitter:image" content="https://bajanese.com/og-image.png">
   <meta name="theme-color" content="#3f4195">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,70 +45,51 @@
     </div>
   </header>
 
-  <main id="main-content">
-
-    <section class="hero">
+  <main id="main-content" data-order-page>
+    <div class="page-head">
       <div class="container">
-        <h1 class="visually-hidden">Bajanese</h1>
-        <img class="hero-logo" src="logo-hero.png" width="1200" height="418" alt="">
-        <p class="hero-tagline"><span class="visually-hidden">Bajan meets Chinese.</span><span aria-hidden="true" data-typewriter="Bajan meets Chinese.">Bajan meets Chinese.</span></p>
-        <div class="hero-actions">
-          <a href="menu.html" class="btn btn-order btn-lg" data-order-link>Start an order</a>
-          <a href="menu.html" class="btn btn-secondary btn-lg">View the menu</a>
+        <h1>Your order</h1>
+        <p>Check your order, add pickup details, and send it to us on WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="container narrow section-sm">
+      <div class="order-status" data-order-status role="status"></div>
+      <div data-order-cart>
+        <noscript><p class="notice">This part of the site needs JavaScript. You can still order by messaging us on <a href="https://instagram.com/bajanese.bb">Instagram</a>.</p></noscript>
+        <p class="hint">Loading your order…</p>
+      </div>
+
+      <div class="checkout" data-app-checkout hidden>
+        <a class="btn btn-order btn-lg btn-block" href="#">Continue to checkout</a>
+      </div>
+
+      <form class="checkout" data-checkout hidden>
+        <h2>Pickup details</h2>
+        <div class="field">
+          <label for="order-name">Name <span class="optional">(optional)</span></label>
+          <input id="order-name" name="customer-name" type="text" maxlength="60" autocomplete="given-name">
         </div>
-        <p class="hero-note">Chinese takeout and Bajan home cooking in St. Michael, and the Grill in St. George every Thursday to Saturday.</p>
-      </div>
-    </section>
-
-    <section class="section reveal" aria-labelledby="kitchens-heading">
-      <div class="container">
-        <h2 id="kitchens-heading">Two kitchens, one name</h2>
-        <div class="location-grid" data-locations="compact">
-          <p>Restaurant: Lower Collymore Rock, St. Michael. Grill: St. George, Thursday to Saturday.</p>
+        <div class="field">
+          <label for="order-time">Pickup time <span class="optional">(optional)</span></label>
+          <input id="order-time" name="pickup-time" type="time" aria-describedby="order-time-hint">
+          <p class="hint" id="order-time-hint">Leave blank for as soon as possible.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-tint reveal" data-deals-section hidden aria-labelledby="deals-heading">
-      <div class="container">
-        <h2 id="deals-heading">Deals</h2>
-        <div class="deal-grid" data-deals></div>
-      </div>
-    </section>
-
-    <section class="section reveal" aria-labelledby="featured-heading">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="featured-heading">Featured dishes</h2>
-          <a href="menu.html" class="text-link">See the full menu &rarr;</a>
+        <div class="field">
+          <label for="order-notes">Notes <span class="optional">(optional)</span></label>
+          <textarea id="order-notes" name="notes" rows="3" maxlength="300" placeholder="Allergies, special requests, or a deal you'd like to use"></textarea>
         </div>
-        <ul class="menu-items is-grid" data-featured></ul>
-      </div>
-    </section>
+        <p class="checkout-error" data-checkout-error hidden></p>
+        <button class="btn btn-order btn-lg btn-block" type="submit">Send order on WhatsApp</button>
+        <p class="hint">WhatsApp opens with your order written out. Press send, and we'll reply to confirm. Pay when you pick up.</p>
+      </form>
 
-    <section class="section reveal" aria-labelledby="catering-heading">
-      <div class="container">
-        <div class="callout">
-          <div>
-            <h2 id="catering-heading">Catering for any occasion</h2>
-            <p>Chinese, Bajan, or both, for parties, private events and the office.</p>
-          </div>
-          <a class="btn btn-order btn-lg" href="catering.html">Plan your event</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="band-indigo reveal" aria-labelledby="app-heading">
-      <div class="container band-inner">
-        <div>
-          <p class="eyebrow">Coming soon</p>
-          <h2 id="app-heading">The Bajanese app</h2>
-          <p>Order ahead, save your favourites and earn rewards on the web, iPhone and Android.</p>
-        </div>
-        <a class="btn btn-yellow btn-lg" href="app.html">Find out more</a>
-      </div>
-    </section>
-
+      <section class="recent-orders" data-recent-orders hidden aria-labelledby="recent-heading">
+        <h2 id="recent-heading">Recent orders</h2>
+        <ul data-recent-list></ul>
+        <p class="hint">Saved on this device only.</p>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">

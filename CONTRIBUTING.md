@@ -10,14 +10,14 @@ First off, thanks for taking the time to contribute! The following is a set of g
    git clone https://github.com/your-username/Bajanese.git
    cd Bajanese
    ```
-3. **Open `index.html`** in your browser directly, or serve locally with any static server:
+3. **Serve the site locally** with any static server (opening the files directly won't load the menu, because browsers block `fetch` on `file://`):
    ```bash
    python -m http.server 8000
    # or
    npx serve .
    ```
 
-No build step, no dependencies. Edit `index.html`, `style.css`, or `script.js` and refresh.
+No build step, no dependencies. Edit the pages, `style.css`, `script.js`, `cart.js` or the files in `data/`, then refresh. See the [README](README.md) for how the site fits together.
 
 ## Development Workflow
 
@@ -25,13 +25,14 @@ No build step, no dependencies. Edit `index.html`, `style.css`, or `script.js` a
    ```bash
    git checkout -b feature/amazing-feature
    ```
-2. Make your changes to `index.html`, `style.css`, or `script.js`.
-3. Verify your changes work by opening the file or running a local server.
+2. Make your changes.
+3. Verify your changes with a local server, at phone width and desktop width.
 4. Commit with a descriptive message.
 
 ## Style Guidelines
 
-- **Aesthetic:** Warm, food-forward — cream backgrounds, terracotta/ember accents, serif display type for headings.
+- **Aesthetic:** Matches the logo: indigo (`--brand-indigo`) for structure, red (`--brand-red-strong` for text and buttons) for ordering, yellow only on indigo backgrounds, white page, sticker-style cards. Baloo 2 for headings, Inter for body text.
+- **Shared header and footer:** every page carries identical copies. If you change one, change them all.
 - **No frameworks.** All vanilla HTML, CSS, and JavaScript.
 - **CSS:** Custom properties in `:root` for the palette; prefer these over hardcoded values.
 - **JavaScript:** ES5-compatible syntax (IIFE, `var`, function expressions) to avoid any transpilation needs.

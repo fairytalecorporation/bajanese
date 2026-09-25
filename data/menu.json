@@ -1,0 +1,402 @@
+{
+  "currency": "BBD",
+  "sections": [
+    {
+      "id": "chinese-takeout",
+      "label": "Chinese Takeout",
+      "locationId": "restaurant"
+    },
+    {
+      "id": "bajan-kitchen",
+      "label": "Bajan Kitchen",
+      "locationId": "restaurant"
+    },
+    {
+      "id": "grill",
+      "label": "The Grill",
+      "locationId": "grill"
+    }
+  ],
+  "items": [
+    {
+      "id": "fried-rice",
+      "name": "Fried Rice",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 800
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": true,
+      "image": null
+    },
+    {
+      "id": "lo-mein",
+      "name": "Lo Mein",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 900
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "general-tsos-chicken",
+      "name": "General Tso's Chicken",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1200
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "sweet-and-sour-chicken",
+      "name": "Sweet & Sour Chicken",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1200
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "pepper-steak",
+      "name": "Pepper Steak",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1300
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "spring-rolls",
+      "name": "Spring Rolls",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 600
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "wonton-soup",
+      "name": "Wonton Soup",
+      "description": "",
+      "section": "chinese-takeout",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 500
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "cou-cou-and-flying-fish",
+      "name": "Cou Cou & Flying Fish",
+      "description": "",
+      "section": "bajan-kitchen",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1600
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "pudding-and-souse",
+      "name": "Pudding & Souse",
+      "description": "",
+      "section": "bajan-kitchen",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1400
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "bajan-stew-chicken",
+      "name": "Bajan Stew Chicken",
+      "description": "",
+      "section": "bajan-kitchen",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1300
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "fish-cakes",
+      "name": "Fish Cakes",
+      "description": "",
+      "section": "bajan-kitchen",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 800
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "saltfish-buljol-and-bakes",
+      "name": "Saltfish Buljol & Bakes",
+      "description": "",
+      "section": "bajan-kitchen",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1000
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "rice-and-peas",
+      "name": "Rice & Peas",
+      "description": "",
+      "section": "bajan-kitchen",
+      "locationIds": [
+        "restaurant"
+      ],
+      "days": null,
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 500
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "grilled-fish",
+      "name": "Grilled Fish",
+      "description": "",
+      "section": "grill",
+      "locationIds": [
+        "grill"
+      ],
+      "days": [
+        4,
+        5,
+        6
+      ],
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1800
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": true,
+      "image": null
+    },
+    {
+      "id": "grilled-chicken",
+      "name": "Grilled Chicken",
+      "description": "",
+      "section": "grill",
+      "locationIds": [
+        "grill"
+      ],
+      "days": [
+        4,
+        5,
+        6
+      ],
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 1500
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": true,
+      "image": null
+    },
+    {
+      "id": "macaroni-pie",
+      "name": "Macaroni Pie",
+      "description": "",
+      "section": "grill",
+      "locationIds": [
+        "grill"
+      ],
+      "days": [
+        4,
+        5,
+        6
+      ],
+      "sizes": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "priceCents": 500
+        }
+      ],
+      "options": [],
+      "allergens": null,
+      "spicy": 0,
+      "available": true,
+      "featured": true,
+      "image": null
+    }
+  ]
+}
